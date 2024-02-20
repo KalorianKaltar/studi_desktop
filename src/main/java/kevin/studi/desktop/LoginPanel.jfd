@@ -1,0 +1,74 @@
+JFDML JFormDesigner: "8.2.1.0.348" Java: "17.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "center:0:1.0"
+			"$rowSpecs": "center:0:1.0"
+			"$alignTop": true
+			"$alignLeft": true
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "0:1.0"
+				"$rowSpecs": "0, 0, 0, 0, 0, 0"
+			} ) {
+				name: "form"
+				"maximumSize": new java.awt.Dimension( 200, 200 )
+				"preferredSize": new java.awt.Dimension( 200, 200 )
+				"minimumSize": new java.awt.Dimension( 200, 200 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Connexion"
+					"font": new java.awt.Font( "Noto Sans", 1, 14 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "E-mail"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 1
+					"insets": new java.awt.Insets( 10, 0, 0, 0 )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "tfEmail"
+					"text": "s.r@studisoignemoi.fr"
+					auxiliary() {
+						"JavaCodeGenerator.variableGetter": true
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 2
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Mot-de-Passe"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 3
+					"insets": new java.awt.Insets( 10, 0, 0, 0 )
+				} )
+				add( new FormComponent( "javax.swing.JPasswordField" ) {
+					name: "passfPassword"
+					"text": "temp_123"
+					auxiliary() {
+						"JavaCodeGenerator.variableGetter": true
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 4
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnLogin"
+					"text": "Se connecter"
+					auxiliary() {
+						"JavaCodeGenerator.variableGetter": true
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 5
+					"insets": new java.awt.Insets( 15, 0, 0, 0 )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
